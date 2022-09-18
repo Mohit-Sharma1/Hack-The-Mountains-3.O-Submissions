@@ -10,16 +10,16 @@ body:
   - type: input
     id: name
     attributes:
-      label: Name
-      description: Enter your full name
-      placeholder: Aditya Oberai
+      label: Team Name
+      description: Enter your team name
+      placeholder: Team CodeCapture
     validations:
       required: true
   - type: input
     id: email
     attributes:
-      label: Email Address
-      description: Enter your email address
+      label: Email Address (Team Lead)
+      description: Enter the team lead's email address
       placeholder: foo@bar.com
     validations:
       required: true
@@ -61,12 +61,45 @@ body:
       label: Hackathon Track
       description: What hackathon track are you opting in?
       options:
-        - Track 1
-        - Track 2
-        - Track 3
-        - Track 4
+        - Healthcare
+        - Blockchain
+        - Open Innovation
+        - Education
+        - AR/VR
+        - Diversity
+        - Enivronment
+        - Energy
     validations:
       required: true
+  - type: checkboxes
+    id: prizes
+    attributes:
+      label: Sponsor/Hackathon Prizes
+      description: What hackathon prizes are you opting in? (You can select more than one)
+      options:
+        - label: HTM - All Girls
+        - label: MLH - Velo by Wix
+        - label: MLH - GoDaddy Registry
+        - label: MLH - Appwrite
+        - label: MLH - DeSo
+        - label: MLH - Co:here
+        - label: Spheron
+        - label: Arcana
+        - label: Near
+        - label: Nervos
+        - label: Hedera
+        - label: Covalent
+        - label: Juicebox
+        - label: Elastic
+        - label: Godspeed
+        - label: Lighthouse
+        - label: Human
+        - label: Vardiano
+        - label: Komet
+        - label: Polygon
+        - label: Thirdweb
+    validations:
+      required: false
   - type: input
     id: project-link
     attributes:
@@ -79,7 +112,7 @@ body:
     id: demo-link
     attributes:
       label: Demo Video/Photos
-      description: Share a publicly visible demo video/photos link of your project
+      description: Share a publicly visible demo video/photos link of your project (optional)
       placeholder: https://www.youtube.com/watch?v=9IBaX1avYWc
     validations:
       required: false
@@ -87,7 +120,7 @@ body:
     id: anything-else
     attributes:
       label: Anything Else?
-      description: Any other feedback, queries or information, you would like to share with us?
+      description: Any other feedback, queries, or information you would like to share with us?
     validations:
       required: false
   - type: checkboxes
