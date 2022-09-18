@@ -11,8 +11,8 @@ body:
     id: name
     attributes:
       label: Team Name
-      description: Enter your team name
-      placeholder: Team CodeCapture
+      description: Enter your team name (format: TeamNumber TeamName 
+      placeholder: 23 CodeCapture
     validations:
       required: true
   - type: input
