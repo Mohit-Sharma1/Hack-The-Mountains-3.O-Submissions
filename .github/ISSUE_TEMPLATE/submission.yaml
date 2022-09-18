@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for participating in the hackathon and creating your submission!
+        Thanks for participating in Hack The Mountains 3.O and creating your submission!
   - type: input
     id: name
     attributes:
@@ -31,6 +31,15 @@ body:
       placeholder: foo1@bar.com, foo2@bar.com, foo3@bar.com,...
     validations:
       required: false
+  - type: dropdown
+    id: online-offline
+    attributes:
+      label: Are you an online or offline team?
+      options:
+        - Online
+        - Offline
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
@@ -111,11 +120,11 @@ body:
   - type: input
     id: demo-link
     attributes:
-      label: Demo Video/Photos
-      description: Share a publicly visible demo video/photos link of your project (optional)
+      label: Demo Video/Presentation
+      description: Share a publicly visible demo video/presentation link of your project
       placeholder: https://www.youtube.com/watch?v=9IBaX1avYWc
     validations:
-      required: false
+      required: true
   - type: textarea
     id: anything-else
     attributes:
